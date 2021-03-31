@@ -8,5 +8,7 @@ public abstract class Vehicle {
 	}
 	
 	abstract public String getVehicle();
+	abstract public void setVehicleName(String name);
+	abstract public String getVehicleName();
 	
 }

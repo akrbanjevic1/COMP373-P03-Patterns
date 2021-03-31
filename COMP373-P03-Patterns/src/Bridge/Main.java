@@ -18,9 +18,13 @@ public class Main {
 		
 		//Instantiating specific vehicles here
 		Vehicle audi = new Sedan(premium);
+		audi.setVehicleName("Audi A4");
 		Vehicle crv = new SUV(economy);
+		crv.setVehicleName("Honda CRV");
 		Vehicle taurus = new Sedan(economy);
+		taurus.setVehicleName("Ford Taurus");
 		Vehicle gWagen = new SUV(premium);
+		gWagen.setVehicleName("Mercedes G-Wagen");
 		
 		//Testing of premium car (an audi) should go here
 		String audiResult = audi.getVehicle();

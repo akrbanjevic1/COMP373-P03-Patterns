@@ -1,6 +1,8 @@
 package Bridge;
 
 public class SUV extends Vehicle{
+	private String name;
+	
 	public SUV (PriceClass priceclass) {
 		super(priceclass);
 	}
@@ -8,8 +10,19 @@ public class SUV extends Vehicle{
 	@Override
 	public String getVehicle() {
 		// TODO Auto-generated method stub
-		String setVehicle = "This car is: an SUV, and a: " + priceclass.getCarClass();
+		String setVehicle = "This "+this.getVehicleName()+" is: an SUV, and a: " + priceclass.getCarClass();
 		return setVehicle;
 	}
 	
+	@Override
+	public void setVehicleName(String name) {
+		// TODO Auto-generated method stub
+		this.name = name;
+	}
+
+	@Override
+	public String getVehicleName() {
+		// TODO Auto-generated method stub
+		return this.name;
+	}
 }
