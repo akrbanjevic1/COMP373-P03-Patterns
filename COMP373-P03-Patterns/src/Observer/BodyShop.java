@@ -4,7 +4,7 @@ import java.util.*;
 
 public class BodyShop implements Subject{
 	private List<Observer> observers = new ArrayList<>();
-
+	
 	@Override
 	public void setStatus(String status) {
 		// TODO Auto-generated method stub
