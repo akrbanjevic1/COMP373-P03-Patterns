@@ -8,7 +8,7 @@ public class SUV extends Vehicle{
 	}
 
 	@Override
-	public String getVehicle() {
+	public String getVehicle() { //This method is from the abstract vehicle class. 
 		// TODO Auto-generated method stub
 		String setVehicle = "This "+this.getVehicleName()+" is: an SUV, and a: " + priceclass.getCarClass();
 		return setVehicle;
