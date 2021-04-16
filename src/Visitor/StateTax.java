@@ -26,6 +26,13 @@ public class StateTax implements Visitor {
         System.out.println("Your total today, including tax, is: ");
         return Double.parseDouble(df.format((sedan.getPrice() * .1125) + sedan.getPrice()));
     }
+    
+	@Override
+	public double visitNY(Sedan sedan) {
+		// TODO Auto-generated method stub
+        System.out.println("Your total today, including tax, is: ");
+        return Double.parseDouble(df.format((sedan.getPrice() * .084 + sedan.getPrice())));
+	}
 
     @Override
     public double visitIL(SUV suv) {
@@ -44,6 +51,13 @@ public class StateTax implements Visitor {
         System.out.println("Your total today, including tax, is: ");
         return Double.parseDouble(df.format((suv.getPrice() * .0975 + suv.getPrice())));
     }
+    
+	@Override
+	public double visitNY(SUV suv) {
+		// TODO Auto-generated method stub
+        System.out.println("Your total today, including tax, is: ");
+        return Double.parseDouble(df.format((suv.getPrice() * .1157 + suv.getPrice())));
+	}
 
 	@Override
 	public double visitIL(Truck truck) {
@@ -65,4 +79,14 @@ public class StateTax implements Visitor {
         System.out.println("Your total today, including tax, is: ");
         return Double.parseDouble(df.format((truck.getPrice() * .112 + truck.getPrice())));
 	}
+	
+	@Override
+	public double visitNY(Truck truck) {
+		// TODO Auto-generated method stub
+        System.out.println("Your total today, including tax, is: ");
+        return Double.parseDouble(df.format((truck.getPrice() * .134 + truck.getPrice())));
+	}
+
+
+
 }

@@ -12,6 +12,7 @@ public class Main {
 		System.out.println(audiA4.acceptIL(tax));
 		System.out.println(porscheCayenne.acceptCA(tax));
 		System.out.println(fordF150.acceptGA(tax));
+		System.out.println(fordF150.acceptNY(tax));
 	}
 
 }

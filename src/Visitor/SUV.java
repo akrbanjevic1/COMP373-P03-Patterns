@@ -23,4 +23,9 @@ public class SUV implements Visitable {
     public double acceptCA(Visitor visitor) {
         return visitor.visitCA(this);
     }
+
+	@Override
+	public double acceptNY(Visitor visitor) {
+		return visitor.visitNY(this);
+	}
 }

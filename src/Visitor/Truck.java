@@ -23,5 +23,9 @@ public class Truck implements Visitable {
     public double acceptCA(Visitor visitor) {
         return visitor.visitCA(this);
     }
+
+	public double acceptNY(Visitor visitor) {
+		return visitor.visitIL(this);
+	}
 }
 
