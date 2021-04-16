@@ -48,18 +48,21 @@ public class StateTax implements Visitor {
 	@Override
 	public double visitIL(Truck truck) {
 		// TODO Auto-generated method stub
-		return 0;
+        System.out.println("Your total today, including tax, is: ");
+        return Double.parseDouble(df.format((truck.getPrice() * .1525 + truck.getPrice())));
 	}
 
 	@Override
 	public double visitGA(Truck truck) {
 		// TODO Auto-generated method stub
-		return 0;
+        System.out.println("Your total today, including tax, is: ");
+        return Double.parseDouble(df.format((truck.getPrice() * .092) + truck.getPrice()));
 	}
 
 	@Override
 	public double visitCA(Truck truck) {
 		// TODO Auto-generated method stub
-		return 0;
+        System.out.println("Your total today, including tax, is: ");
+        return Double.parseDouble(df.format((truck.getPrice() * .112 + truck.getPrice())));
 	}
 }
